@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e25ceefad9.js" crossorigin="anonymous"></script>
+     </head>
+    <body>
+        <header id="header">
+            <a href="#" class="logo">Portfolio.</a>
+            <nav class="navbar">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </header>
+        <div id="home">
+            <div class="header-text">
+                <h1>Hello,<br>I'm <span class="prefer">Tharuni <span class="sur">Namagondla</span></span></h1>
+                <p class="role">Aspiring Software Engineer</p>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col2"><h1 class="sub-title">About Me</h1>
+                        <p class="txt"> Hello, I'm Tharuni Namagondla, a recent graduate in Computer Science and Engineering from Rajiv Gandhi University of Knowledge Technology, R.K. Valley, with a solid 9.03 CGPA. Proficient in programming languages such as C and Python, I also have hands-on experience with web technologies like HTML5, CSS, JavaScript, and PHP, along with MySQL databases. I've explored the basics of machine learning and applied my skills in projects, including a Sales Estimation project and a Face Recognition Attendance Management System. Known for being self-motivated and a quick learner, I'm eager to contribute my skills and enthusiasm to meaningful projects in the software development field.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming languages:</span><br>Python and C</li>
+                                <li><span>Web Technologies:</span><br>HTML5, CSS, JavaScript and PHP</li>
+                                <li><span>Database:</span><br>MySQL</li>
+                                <li><span>Additional Skills:</span><br>AWS Cloud Computing,Machine Learning,Data
+                                    Structures,Software Testing,Software
+                                    Engineering,SDLC,STLC,Linux,Windows.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019-2023</span><br>BTech from RGUKT R.K.Valley in Computer Science</li>
+                                <li><span>2017-2019</span><br>PUC from RGUKT R.K.Valley</li>
+                                <li><span>2012-2017</span><br>SSC from ZPHS Demakethepalli</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Face recognition attendance management system: 
+                                </span><br>Replaced paper attendance with this model.Marks attendance through face recognition.Implemented in Python with Machine Learning algorithms</li>
+                                <li><span> Summer Internship-Machine Learning | Internshala:</span><br> Engaged in practical applications of machine learning
+                                    concepts.Gained hands-on experience,contributing to thedevelopment of sales estimation of a company.Used Python for practical implementations.
+                                    Applied machine learning concepts in real projects.</li>
+                                <li><span>Sales Estimation of a Company :</span><br>Used Python and Linear Regression for this model.Created a user interface using Tkinter.Guides company on ad investments for higher sales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="project">
+            <div class="container"></div>
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/project1.jpeg" >
+                        <div class="layer">
+                        <h3 class="project-head">Sales Estimation Of a Company</h3>
+                        <p>
+                            In the Sales Estimation project (September to November 2022), machine learning analyzes advertising impact on sales, noting a positive correlation with higher expenses. Transparency requires explicit details on ML algorithms, data sources, and features for reliability. Thorough validation against real-world data is crucial, exploring external factors beyond advertising for a comprehensive understanding.
+    
+                        </p>
+                        <a href="https://github.com/TharuniNamagondla/Minor_project_report/blob/main/Final_report.pdf" target="_blank"><i class="fas fa-external-link-alt"></i>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/project2.jpg" >
+                        <div class="layer">
+                        <h3 class='project-head'>Face Recognition Attendance Management System</h3>
+                        <p>
+                            The Face Recognition Attendance Management System, slated for development between December 2022 and March 2023, automates attendance using face recognition with specific algorithms. Automatic registration by administrators reduces manual workload, enhancing system efficiency. Rigorous testing ensures reliability, addressing security and privacy concerns related to facial data.
+                        </p>
+                        <a href="https://github.com/TharuniNamagondla/Major-report/blob/main/project_report.pdf" target="_blank"><i class="fas fa-external-link-alt"></i>
+                        </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a href="#" class="btn">See more</a>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p class="para"><i class="fa-solid fa-envelope"></i>tharunireddyn3@gmail.com</p>
+                        <p class="para"><i class="fa-solid fa-square-phone"></i>9380430596</p>
+                        <div id="social-icons">
+                            <a href="https://wa.me/9380430596" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/in/namagondla-tharuni" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/TharuniNamagondla" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="mailto:tharunireddyn3@gmail.com" target="_blank"><i class="fa-solid fa-envelope-open"></i></a>
+                            
+                        </div>
+                        <a href="images/Tharuni_Namagondla_resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2024 Tharuni Namagondla. All rights reserved.</p>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemeu=document.getElementById("sidemenu");
+            function openmenu(){
+                sidemeu.style.right="0";
+            }
+            function closemenu(){
+                sidemeu.style.right="-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzjBkPYCf_Vu6ER6_Dd_Q37ioffdo8MOlgDQ3Urfw0IZWVUYuLGGQpm--4qPPwRxUo5yQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message Sent Successfully" 
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                },5000)
+            })
+                form.reset()
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>
